@@ -1,0 +1,22 @@
+{
+  "name": "fizzbuzzjs",
+  "version": "1.0.0",
+  "description": "The Fizz Buzz Kata",
+  "main": "FizzBuzz.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AashiqDurga/FizzBuzzJs.git"
+  },
+  "author": "Aashiq Durga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AashiqDurga/FizzBuzzJs/issues"
+  },
+  "homepage": "https://github.com/AashiqDurga/FizzBuzzJs#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
