@@ -1,14 +1,14 @@
-checkIfMultipleOfThree = function(number) {
+validateMultiplesOfThree = function(number) {
   if (number % 3 === 0) return true;
 };
 
-checkIfMultipleOfFive = function(number) {
+validateMultiplesOfFive = function(number) {
   if (number % 5 === 0) return true;
 };
 
-exports.checkIfMultipleOfThreeAndFive = function(number) {
-  var isMultipleOfThree = checkIfMultipleOfThree(number);
-  var isMultipleOfFive = checkIfMultipleOfFive(number);
+exports.resultFor = function(number) {
+  var isMultipleOfThree = validateMultiplesOfThree(number);
+  var isMultipleOfFive = validateMultiplesOfFive(number);
 
   if (isMultipleOfThree && isMultipleOfFive) {
     return "FizzBuzz";
@@ -17,6 +17,6 @@ exports.checkIfMultipleOfThreeAndFive = function(number) {
   } else if (isMultipleOfFive) {
     return "Buzz";
   } else {
-    return number;
+    return number.toString();
   }
 };
