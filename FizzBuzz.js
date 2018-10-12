@@ -1,12 +1,17 @@
-exports.checkIfMultipleOfThree = function(number) {
-  if (number % 3 === 0) return "Fizz";
-  };
+checkIfMultipleOfThree = function(number) {
+  if (number % 3 === 0) return true;
+};
 
- exports.checkIfMultipleOfFive = function(number) {
-  if (number % 5 === 0) return "Buzz";
-  };
+checkIfMultipleOfFive = function(number) {
+  if (number % 5 === 0) return true;
+};
 
- exports.checkIfMultipleOfThreeAndFive = function(number) {
-  if (number % 5 === 0 && number % 3 === 0) return "FizzBuzz";
-  };
-
+exports.checkIfMultipleOfThreeAndFive = function(number) {
+  if (checkIfMultipleOfThree(number) && checkIfMultipleOfFive(number)) {
+    return "FizzBuzz";
+  } else if (checkIfMultipleOfThree(number)) {
+    return "Fizz";
+  } else if (checkIfMultipleOfFive(number)) {
+    return "Buzz";
+  }
+};
