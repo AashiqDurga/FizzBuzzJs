@@ -7,11 +7,14 @@ checkIfMultipleOfFive = function(number) {
 };
 
 exports.checkIfMultipleOfThreeAndFive = function(number) {
-  if (checkIfMultipleOfThree(number) && checkIfMultipleOfFive(number)) {
+  var isMultipleOfThree = checkIfMultipleOfThree(number);
+  var isMultipleOfFive = checkIfMultipleOfFive(number);
+
+  if (isMultipleOfThree && isMultipleOfFive) {
     return "FizzBuzz";
-  } else if (checkIfMultipleOfThree(number)) {
+  } else if (isMultipleOfThree) {
     return "Fizz";
-  } else if (checkIfMultipleOfFive(number)) {
+  } else if (isMultipleOfFive) {
     return "Buzz";
   }
 };
