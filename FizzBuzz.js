@@ -16,5 +16,7 @@ exports.checkIfMultipleOfThreeAndFive = function(number) {
     return "Fizz";
   } else if (isMultipleOfFive) {
     return "Buzz";
+  } else {
+    return number;
   }
 };

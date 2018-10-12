@@ -14,3 +14,8 @@ test("Given a number, When the number is a multiple of 3 and 5, Then return Fizz
   var result = fizzBuzz.checkIfMultipleOfThreeAndFive(15);
   expect(result).toBe('FizzBuzz');
 });
+
+test("Given a number, When the number is not a multiple of 3 and 5, Then return the number ", () => {
+  var result = fizzBuzz.checkIfMultipleOfThreeAndFive(2);
+  expect(result).toBe(2);
+});
